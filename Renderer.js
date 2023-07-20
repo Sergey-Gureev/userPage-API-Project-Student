@@ -33,6 +33,19 @@ class Renderer {
         this.renderPiece(data.pokemon, this.templatePokemon, '.pokemon-container')
         this.renderPiece(data.receipes, this.templateReceipe, '.meat-container')
         this.renderPiece(data.friends, this.templateFriends, '.friends-container')
+
+        // this.changeBackground(data.pokemon.type)
     }
-    
+    changeBackground(type){
+        let bgColor;
+        if (type === 'ground') {
+            bgColor = 'brown'
+        }
+        else if (type === 'electric') {
+            bgColor = 'yellow'
+        } else {
+            bgColor = 'cyan'
+        }
+        $('body').style('background-color', bgColor)
+    }
 }

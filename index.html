@@ -24,7 +24,8 @@
     </script>
 
     <script id="pokemon-template" type="text/x-handlebars-template">
-        <img src="{{ pokemon.image }}">
+        <div><iframe src="{{ pokemon.gif }}" width="100%" heigh="100%"></iframe></div>
+        <div></div><img src="{{ pokemon.image }}"></div>
         <p>Favorite Pokemon: {{ pokemon.name }}</p>
     </script>
 
